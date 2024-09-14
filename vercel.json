@@ -1,3 +1,16 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
-}
+    "version": 2,
+    "name": "meu-projeto",
+    "builds": [
+      {
+        "src": "**/*",
+        "use": "@vercel/next"
+      }
+    ],
+    "output": "next",
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
